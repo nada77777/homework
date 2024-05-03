@@ -1,0 +1,59 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.main {
+  width: 316px;
+  height: 168px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+}
+
+.avatars {
+  background-color: cadetblue;
+  display: flow-root;
+}
+
+.avatar {
+  position: relative;
+  float: left;
+  width: 64px;
+  height: 64px;
+  background-color: aqua;
+  margin: 10px 0;
+}
+
+.avatar:nth-child(n + 2) {
+  margin-left: 20px;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px 100px 100px 100px;
+}
+
+.state {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #dbdbdb;
+  border: 1px solid white;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px 100px 100px 100px;
+}
+
+.state.online {
+  background-color: #4cfe88;
+}
+
+@supports (display: flex) {
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
