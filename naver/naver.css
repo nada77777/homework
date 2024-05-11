@@ -1,0 +1,126 @@
+/* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요, 넵 :) */
+:root {
+  --basic-font-size: 1rem;
+  --color-main: #03cf5d;
+  --color-black: #181818;
+  --space-basic: 1.25rem;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  font-size: var(--basic-font-size);
+  color: var(--color-black);
+}
+
+main {
+  width: 100%;
+  padding: 0 var(--space-basic);
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+
+    img {
+      width: 230px;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form > input {
+    font-size: 0.875rem;
+    height: 45px;
+    padding: var(--space-basic);
+    border: 1px solid #dadada;
+    background-color: #fff;
+  }
+
+  form > input:focus {
+    border-color: var(--color-main);
+    background-color: #24388d;
+  }
+
+  form > button {
+    font-size: var(--basic-font-size);
+    height: 45px;
+    color: #fff;
+    border: 0;
+    background-color: var(--color-main);
+    margin-top: 1.25rem;
+  }
+}
+
+.login-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.625rem;
+
+  .checkbox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+
+    input {
+      appearance: none;
+      width: 24px;
+      height: 24px;
+      margin: 0rem;
+      margin-right: 0.3125rem;
+      background: url(icons/unchecked.svg) no-repeat 0 0 / contain;
+    }
+
+    input:checked {
+      background: url(icons/checked.svg) no-repeat 0 0 / contain;
+    }
+  }
+
+  .ip-security {
+    display: none;
+    font-size: var(--basic-font-size);
+
+    a {
+      text-decoration: none;
+      color: var(--color-black);
+    }
+
+    strong {
+      color: var(--color-main);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    width: 460px;
+    margin: auto;
+
+    form > input:focus {
+      background-color: #e9f0fd;
+    }
+  }
+
+  .login-option {
+    .checkbox {
+      width: auto;
+      justify-content: flex-start;
+    }
+
+    .ip-security {
+      display: flex;
+    }
+  }
+}

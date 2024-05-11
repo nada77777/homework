@@ -1,0 +1,47 @@
+<!-- HTML 마크업을 작성해 주세요 -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="naver.css" />
+    <title>naver</title>
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+        <img src="logo.svg" alt="" />
+      </div>
+      <form class="form" action="/">
+        <label for="email" aria-labelledby="email"></label>
+        <input
+          type="email"
+          required
+          placeholder="아이디(이메일)"
+          id="email"
+          name="email"
+        />
+        <label for="pwd" aria-labelledby="password"></label>
+        <input
+          type="password"
+          required
+          placeholder="비밀번호"
+          id="pwd"
+          name="pwd"
+        />
+        <button type="submit">로그인</button>
+      </form>
+      <div class="login-option" aria-labelledby="login option">
+        <div class="checkbox">
+          <input type="checkbox" name="maintain-login" id="maintain-login" />
+          <label for="maintain-login">로그인 상태유지</label>
+        </div>
+        <div class="ip-security">
+          <a href="ip_security.html" target="_blank" aria-haspopup="true"
+            >IP보안<strong>ON</strong></a
+          >
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
