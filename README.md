@@ -4,4 +4,4 @@
 
 # 링크
 
-[avatars README.md] (./avatars/avatars.md)
+[avatars README.md] ([#homework/avatars/avatars.md](https://github.com/nada77777/homework/blob/main/avatars/avatars.md#%EC%88%98%ED%96%89-%EA%B3%BC%EC%A0%95))

@@ -1,4 +1,3 @@
-아바타 과제 수행에 대한 설명을 avatars.md 파일에 작성하고 homework 폴더에 있는 README.md에 링크로 연결한다
 
 ## 수행 과정
 
